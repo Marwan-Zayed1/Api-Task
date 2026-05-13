@@ -1,11 +1,6 @@
-
-
-
-
 async function getApi() {
   var result = await fetch("https://fakestoreapi.com/products");
   var maro = await result.json();
-  
   var ali = "";
   for (i = 0; i < maro.length; i++) {
     var cartoona = `  
@@ -22,5 +17,4 @@ async function getApi() {
   }
   document.querySelector(".test").innerHTML = ali;
 }
-
 getApi();
